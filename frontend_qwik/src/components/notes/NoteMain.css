@@ -1,0 +1,139 @@
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f7fafd;
+  min-width: 0;
+  min-height: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 22px 36px 18px 36px;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+  color: #0E76FD;
+}
+
+.note-detail {
+  padding: 32px 36px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.note-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #3C4858;
+}
+
+.note-meta {
+  color: #9ea4af;
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+}
+
+.note-content {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: #434d5a;
+  margin-bottom: 26px;
+}
+
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 460px;
+  width: 100%;
+}
+
+.note-editor input,
+.note-editor textarea {
+  border: 1px solid #dbe8fa;
+  background: #fff;
+  color: #2C323D;
+  border-radius: 6px;
+  padding: 10px 13px;
+  font-size: 1.05rem;
+}
+
+.note-editor input:focus,
+.note-editor textarea:focus {
+  outline: none;
+  border-color: #0E76FD;
+}
+
+.note-editor textarea {
+  resize: vertical;
+  min-height: 108px;
+  font-family: inherit;
+}
+
+.note-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.button-primary {
+  background: #0E76FD;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+
+.button-primary:hover {
+  background: #005EC6;
+}
+
+.button-accent {
+  background: #FFC107;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+
+.button-accent:hover {
+  background: #ffb300;
+}
+
+.button-danger {
+  background: transparent;
+  color: #d3261a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: background 0.13s;
+}
+
+.button-danger:hover {
+  background: #fde4e0;
+}
+
+@media (max-width: 900px) {
+  .note-detail, .main-header {padding-left:18px; padding-right:12px;}
+}
+
+@media (max-width: 600px) {
+  .main-header {font-size:1.01rem;padding:14px 7px;}
+  .note-detail {padding:10px 4px;}
+}
