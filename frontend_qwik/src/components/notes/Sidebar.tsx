@@ -36,7 +36,7 @@ export const Sidebar = component$(
           ))}
         </ul>
         <div class="sidebar-footer">
-          <button onClick$={props.onCreate$}>+ New Note</button>
+          <button type="button" onClick$={props.onCreate$}>+ New Note</button>
         </div>
       </aside>
     );
