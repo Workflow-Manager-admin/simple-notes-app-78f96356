@@ -15,8 +15,8 @@
   --qwik-light-purple: #ac7ff4;
   --qwik-dark-purple: #713fc2;
   --qwik-dirty-black: #1d2033;
-  --qwik-dark-background: #f7fafd;
-  --qwik-dark-text: #222;
+  --qwik-dark-background: #FFC107; /* Use yellow for global background */
+  --qwik-dark-text: #252525; /* Slightly darker for better contrast */
 }
 
 html {
@@ -40,10 +40,15 @@ html {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
+  background: var(--qwik-dark-background); /* Set background for full viewport */
 }
 
 body {
   padding: 0;
   margin: 0;
   line-height: inherit;
+  min-height: 100vh;
+  background: var(--qwik-dark-background); /* Set body background to yellow */
+  color: var(--qwik-dark-text); /* Ensure text is dark for better contrast */
+  transition: background 0.25s;
 }
